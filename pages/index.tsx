@@ -20,7 +20,6 @@ export default function Home() {
         className="hidden"
         type="file"
         accept="image/*"
-        capture
       />
       <button
         onClick={() => document.getElementById("profile")?.click()}
