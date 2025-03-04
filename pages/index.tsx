@@ -15,6 +15,10 @@ export default function Home() {
     setImage(URL.createObjectURL(file));
   };
 
+  const openPopup = ()=>{
+    window.open("https://google.com", '_blank')
+  }
+
   const handleUpload = async () => {
     if (!selectedFile) return;
 
@@ -109,6 +113,7 @@ export default function Home() {
           {loading ? "Uploading..." : "Upload"}
         </button>
       )}
+      <button className="mt-5 bg-orange-600 border rounded-full p-2 px-5 text-white font-bold" onClick={openPopup}>Open Popup</button>
     </div>
   );
 }
